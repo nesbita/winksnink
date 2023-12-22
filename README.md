@@ -1,2 +1,0 @@
-# winksnink
-mockup
