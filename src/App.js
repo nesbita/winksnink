@@ -6,7 +6,6 @@ import Portfolio from './Portfolio'
 import { Route, Routes } from 'react-router'
 import Services from './Services'
 
-
 class App extends Component {
     render() {
         // return <Home/>

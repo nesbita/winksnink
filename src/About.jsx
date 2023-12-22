@@ -3,8 +3,9 @@ import { useNavigate } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import Accordion from 'react-bootstrap/Accordion';
 
-export default class About extends Component {
+class About extends Component {
     render() {
         return (
             <>
@@ -22,39 +23,61 @@ export default class About extends Component {
         </Container>
       </Navbar>
       <br />
-                <h1>
-                    Welcome!
-                </h1>
+                
+            <h1>
+                Welcome!
+            </h1>
 
-                <h2>My name is Amanda and I am a home based lash technician in the heart of 
+            <h2>
+                My name is Amanda and I am a home based lash technician in the heart of 
                 Winchester, VA.  I have been practicing lashing since 2019, licensed in 
-                cosmetology since 22010, and I acquired a costmetic tattooer license in
+                cosmetology 
+                <br/>
+                since 2010, and I acquired a cosmetic tattooer license in
                 2020.  I left the hair industry to pursue lashing and permanent makeup 
-                full time and I've never been happier!  Please don't hesitat to reach 
-                out to me with any questions you may have. 😁
-                </h2>
+                full time and I've never been happier!
+                <br/>
+                Please don't hesitate to reach out to me with any questions you may have. 😁
+            </h2>
 
-            <div>
-                BUSINESS HOURS:
+{/* function AllCollapseExample() {
+  return (
+    <> */}
+    <Accordion>
+      <Accordion.Item eventKey="0">
+        <Accordion.Header>BUSINESS HOURS</Accordion.Header>
+        <Accordion.Body>
+            Monday: 9AM - 6PM
+            <br/>
+            Tuesday: 9AM - 6PM
+            <br/>
+            Wednesday: 9AM - 4PM
+            <br/>
+            Thursday: 9AM - 6PM
+            <br/>
+            Friday: 9AM - 4PM
+            <br/>
+            Saturday: CLOSED
+            <br/>
+            Sunday: CLOSED
+        </Accordion.Body>
+      </Accordion.Item>
+      <Accordion.Item eventKey="1">
+        <Accordion.Header>CANCELLATION POLICY</Accordion.Header>
+        <Accordion.Body>
+            We get it that sometimes things come up and you may need to cancel.  If 
+            you are unable to make your appointment, please kindly notify Winks & Ink
+            at ajforhair@gmail.com as soon as possible to reschedule.
+        </Accordion.Body>
+      </Accordion.Item>
+    </Accordion>
+    {/* </> */}
 
-                Monday: 9AM - 6PM
-                Tuesday: 9AM - 6PM
-                Wednesday: 9AM - 4PM
-                Thursday: 9AM - 6PM
-                Friday: 9AM - 4PM
-                Saturday: CLOSED
-                SUNDAY: CLOSED
-            </div>
-
-            <div>
-                CANCELLATION POLICY:
-
-                We get it that sometimes things come up and you may need to cancel.  If 
-                you are unable to make your appointment, please kindly notify Winks & Ink
-                at ajforhair@gmail.com as soon as possible to reschedule.
-            </div>
             </div>
             </>
         )
     }
 }
+
+export default About;
+// export default AllCollapseExample;
