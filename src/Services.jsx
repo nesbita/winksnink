@@ -35,11 +35,13 @@ export default class Services extends Component {
             </div>
 
             <h1>Lash, Brow, and Permanent Makeup Services</h1>
-            <h4>* Note on Fill for Lash Extensions:  Price increases per week since last fill/full set.  NO FILLS AFTER 4 WEEKS - new set is required. *</h4>
-
+            <h4>A Few Notes:</h4>
+            <h4>*For Fills for Lash Extensions:  Price increases per week since last fill/full set.  NO FILLS AFTER 4 WEEKS - new set is required. *</h4>
+            <h4>** Deposits are required from NEW clients for Eyebrow Shaping, Eyebrow Tinting, and Ombre/Powder Brow Tattoos. Ombre/Powder Brow Tattoos also require an initial consultation with Amanda. **</h4>
+            <h4>*** Brow Touch Up/Color Boost is an annual service for PREVIOUSLY shaded brows. *** </h4>
             <div class = 'cardContainer'>
               {/* CARD 1 */}
-              <Card sx={{ maxWidth: 345 }}>
+              <Card id='cards' sx={{ maxWidth: 360 }}>
                 <CardMedia
                   sx={{ height: 140 }}
                   image='lash_service.jpeg'
@@ -47,21 +49,20 @@ export default class Services extends Component {
               />
                 <CardContent>
                   <Typography gutterBottom variant="h5" component="div">
-                    Classic Lash Extensions - Full Set
+                    Classic Extensions - Full Set**
                   </Typography>
                   <Typography variant="body2" color="text.secondary">
                     $110 | 120 minutes
                   </Typography>
-                  <h6>$25 Deposit Required Upon Booking for New Clients</h6>
+                  {/* <h6>$25 Deposit Required Upon Booking for New Clients</h6> */}
                 </CardContent>
                 <CardActions>
                   <Button size="small">Book</Button>
                 </CardActions>
               </Card>
-              {/* <br/> */}
 
               {/* CARD TWO */}
-              <Card sx={{ maxWidth: 345 }}>
+              <Card id='cards' sx={{ maxWidth: 360 }}>
                 <CardMedia
                   sx={{ height: 140 }}
                   image='lash_service.jpeg'
@@ -69,7 +70,7 @@ export default class Services extends Component {
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h5" component="div">
-                    Classic Touch Up - One Week
+                    Classic Touch Up - 1 Week
                   </Typography>
                   <Typography variant="body2" color="text.secondary">
                     $35 | 60 minutes
@@ -81,7 +82,7 @@ export default class Services extends Component {
               </Card>
 
               {/* CARD THREE */}
-              <Card sx={{ maxWidth: 345 }}>
+              <Card sx={{ maxWidth: 360 }}>
                 <CardMedia
                   sx={{ height: 140 }}
                   image='lash_service.jpeg'
@@ -89,7 +90,7 @@ export default class Services extends Component {
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h5" component="div">
-                    Classic Fill - Two Weeks*
+                    Classic Fill - 2 Weeks*
                   </Typography>
                   <Typography variant="body2" color="text.secondary">
                     $50 | 90 minutes
@@ -101,7 +102,7 @@ export default class Services extends Component {
               </Card>
 
           {/* CARD FOUR */}
-              <Card sx={{ maxWidth: 345 }}>
+              <Card sx={{ maxWidth: 360 }}>
                 <CardMedia
                   sx={{ height: 140 }}
                   image='lash_service.jpeg'
@@ -109,7 +110,7 @@ export default class Services extends Component {
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h5" component="div">
-                    Classic Fill - Three Weeks*
+                    Classic Fill - 3 Weeks*
                   </Typography>
                   <Typography variant="body2" color="text.secondary">
                     $60 | 90 minutes
@@ -121,7 +122,7 @@ export default class Services extends Component {
               </Card>
 
           {/* CARD FIVE */}
-              <Card sx={{ maxWidth: 345 }}>
+              <Card sx={{ maxWidth: 360 }}>
                 <CardMedia
                   sx={{ height: 140 }}
                   image='lash_service.jpeg'
@@ -129,12 +130,12 @@ export default class Services extends Component {
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h5" component="div">
-                    Hybrid Lash Extensions - Full Set
+                    Hybrid Extensions - Full Set**
                   </Typography>
                   <Typography variant="body2" color="text.secondary">
-                    Hybrid - $125 | 120 minutes
+                    $125 | 120 minutes
                   </Typography>
-                  <h6>$25 Deposit Required Upon Booking for New Clients</h6>
+                  {/* <h6>$25 Deposit Required Upon Booking for New Clients</h6> */}
                 </CardContent>
                 <CardActions>
                   <Button size="small">Book</Button>
@@ -142,7 +143,7 @@ export default class Services extends Component {
               </Card>
 
           {/* CARD SIX */}
-              <Card sx={{ maxWidth: 345 }}>
+              <Card sx={{ maxWidth: 360 }}>
                 <CardMedia
                   sx={{ height: 140 }}
                   image='lash_service.jpeg'
@@ -150,7 +151,7 @@ export default class Services extends Component {
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h5" component="div">
-                    Hybrid Touch Up - One Week
+                    Hybrid Touch Up - 1 Week
                   </Typography>
                   <Typography variant="body2" color="text.secondary">
                     $40 | 60 minutes
@@ -162,7 +163,7 @@ export default class Services extends Component {
               </Card>
 
           {/* CARD SEVEN */}
-              <Card sx={{ maxWidth: 345 }}>
+              <Card sx={{ maxWidth: 360 }}>
                 <CardMedia
                   sx={{ height: 140 }}
                   image='lash_service.jpeg'
@@ -170,7 +171,7 @@ export default class Services extends Component {
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h5" component="div">
-                    Hybrid Fill - Two Weeks*
+                    Hybrid Fill - 2 Weeks*
                   </Typography>
                   <Typography variant="body2" color="text.secondary">
                     $60 | 90 minutes
@@ -182,7 +183,7 @@ export default class Services extends Component {
               </Card>
 
               {/* CARD EIGHT */}
-              <Card sx={{ maxWidth: 345 }}>
+              <Card sx={{ maxWidth: 360 }}>
                   <CardMedia
                     sx={{ height: 140 }}
                     image='lash_service.jpeg'
@@ -190,7 +191,7 @@ export default class Services extends Component {
                   />
                   <CardContent>
                     <Typography gutterBottom variant="h5" component="div">
-                      Hybrid Fill - Three Weeks*
+                      Hybrid Fill - 3 Weeks*
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
                       $70 | 90 minutes
@@ -202,7 +203,7 @@ export default class Services extends Component {
               </Card>
 
           {/* CARD NINE */}
-              <Card sx={{ maxWidth: 345 }}>
+              <Card sx={{ maxWidth: 360 }}>
                 <CardMedia
                   sx={{ height: 140 }}
                   image='lash_service.jpeg'
@@ -210,12 +211,12 @@ export default class Services extends Component {
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h5" component="div">
-                    Volume Lash Extensions - Full Set
+                    Volume Extensions - Full Set**
                   </Typography>
                   <Typography variant="body2" color="text.secondary">
-                    Hybrid - $150 | 150 minutes
+                    $150 | 150 minutes
                   </Typography>
-                  <h6>$25 Deposit Required Upon Booking for New Clients</h6>
+                  {/* <h6>$25 Deposit Required Upon Booking for New Clients</h6> */}
                 </CardContent>
                 <CardActions>
                   <Button size="small">Book</Button>
@@ -223,7 +224,7 @@ export default class Services extends Component {
               </Card>
 
           {/* CARD TEN */}
-              <Card sx={{ maxWidth: 345 }}>
+              <Card sx={{ maxWidth: 360 }}>
                 <CardMedia
                   sx={{ height: 140 }}
                   image='lash_service.jpeg'
@@ -231,7 +232,7 @@ export default class Services extends Component {
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h5" component="div">
-                    Volume Touch Up - One Week 
+                    Volume Touch Up - 1 Week 
                   </Typography>
                   <Typography variant="body2" color="text.secondary">
                     $40 | 60 minutes
@@ -243,7 +244,7 @@ export default class Services extends Component {
               </Card>
     
               {/* CARD ELEVEN */}
-              <Card sx={{ maxWidth: 345 }}>
+              <Card sx={{ maxWidth: 360 }}>
                 <CardMedia
                   sx={{ height: 140 }}
                   image='lash_service.jpeg'
@@ -251,7 +252,7 @@ export default class Services extends Component {
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h5" component="div">
-                    Volume Fill - Two Weeks*
+                    Volume Fill - 2 Weeks*
                   </Typography>
                   <Typography variant="body2" color="text.secondary">
                     $70 | 105 minutes
@@ -263,7 +264,7 @@ export default class Services extends Component {
               </Card>
 
           {/* CARD 12 */}
-              <Card sx={{ maxWidth: 345 }}>
+              <Card sx={{ maxWidth: 360 }}>
                 <CardMedia
                   sx={{ height: 140 }}
                   image='lash_service.jpeg'
@@ -271,7 +272,7 @@ export default class Services extends Component {
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h5" component="div">
-                    Volume Fill - Three Weeks*
+                    Volume Fill - 3 Weeks*
                   </Typography>
                   <Typography variant="body2" color="text.secondary">
                     $80 | 90 minutes
@@ -283,7 +284,7 @@ export default class Services extends Component {
               </Card>
 
           {/* CARD 13 */}
-              <Card sx={{ maxWidth: 345 }}>
+              <Card sx={{ maxWidth: 360 }}>
                 <CardMedia
                   sx={{ height: 140 }}
                   image='lash_service.jpeg'
@@ -304,7 +305,7 @@ export default class Services extends Component {
 
           {/* <h1>Brow Services</h1> */}
           {/* CARD 14 */}
-              <Card sx={{ maxWidth: 345 }}>
+              <Card sx={{ maxWidth: 360 }}>
                 <CardMedia
                   sx={{ height: 140 }}
                   image='brow_service.jpeg'
@@ -312,12 +313,12 @@ export default class Services extends Component {
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h5" component="div">
-                    Eyebrow Shaping with Tint
+                    Eyebrow Shaping with Tint**
                   </Typography>
                   <Typography variant="body2" color="text.secondary">
                     Shaping and Tint $25 | 60 minutes
                   </Typography>
-                  <h6>$5 Deposit Required Upon Booking for New Clients</h6>
+                  {/* <h6>$5 Deposit Required Upon Booking for New Clients</h6> */}
                 </CardContent>
                 <CardActions>
                   <Button size="small">Book</Button>
@@ -325,7 +326,7 @@ export default class Services extends Component {
               </Card>
 
               {/* CARD 15 */}
-              <Card sx={{ maxWidth: 345 }}>
+              <Card sx={{ maxWidth: 360 }}>
                 <CardMedia
                   sx={{ height: 140 }}
                   image='brow_service.jpeg'
@@ -333,12 +334,12 @@ export default class Services extends Component {
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h5" component="div">
-                    Eyebrow Tint - No Shaping
+                    Eyebrow Tint - No Shaping**
                   </Typography>
                   <Typography variant="body2" color="text.secondary">
                     Tint Only $15 | 60 minutes
                   </Typography>
-                  <h6>$5 Deposit Required Upon Booking for New Clients</h6>
+                  {/* <h6>$5 Deposit Required Upon Booking for New Clients</h6> */}
                 </CardContent>
                 <CardActions>
                   <Button size="small">Book</Button>
@@ -346,7 +347,7 @@ export default class Services extends Component {
               </Card>
 
           {/* CARD 16 */}
-              <Card sx={{ maxWidth: 345 }}>
+              <Card sx={{ maxWidth: 360 }}>
                 <CardMedia
                   sx={{ height: 140 }}
                   image='brow_service.jpeg'
@@ -354,12 +355,12 @@ export default class Services extends Component {
               />
                 <CardContent>
                   <Typography gutterBottom variant="h5" component="div">
-                    Eyebrow Shaping - No Tint
+                    Eyebrow Shaping - No Tint**
                   </Typography>
                   <Typography variant="body2" color="text.secondary">
                     Shaping Only $15 | 30 minutes
                   </Typography>
-                  <h6>$5 Deposit Required Upon Booking for New Clients</h6>
+                  {/* <h6>$5 Deposit Required Upon Booking for New Clients</h6> */}
                 </CardContent>
                 <CardActions>
                   <Button size="small">Book</Button>
@@ -368,22 +369,22 @@ export default class Services extends Component {
 
           {/* <h1>Permanent Makeup</h1> */}
               {/* CARD 17 */}
-              <Card sx={{ maxWidth: 345 }}>
+              <Card sx={{ maxWidth: 360 }}>
                   <CardMedia
                     sx={{ height: 140 }}
-                    image='permanent_makeup.png'
+                    image='permanent.jpeg'
                     title='permanent makeup'
                   />
                   <CardContent>
                     <Typography gutterBottom variant="h5" component="div">
-                      Ombre/Powder Brow Tattoo
+                      Ombre/Powder Brow Tattoo**
                     </Typography>
-                    **CONSULTATION IS REQUIRED** <br/>
-                    This can be done virtually or in person.  Please reach out to Amanda to schedule.
+                    {/* **CONSULTATION IS REQUIRED** <br/>
+                    This can be done virtually or in person.  Please reach out to Amanda to schedule. */}
                     <Typography variant="body2" color="text.secondary">
                       $250+ | 240 minutes
                     </Typography>
-                    <h6>$50 Deposit Required Upon Booking</h6>
+                    {/* <h6>$50 Deposit Required Upon Booking</h6> */}
                   </CardContent>
                   <CardActions>
                     <Button size="small">Book</Button>
@@ -391,17 +392,17 @@ export default class Services extends Component {
               </Card>
 
           {/* CARD 18 */}
-              <Card sx={{ maxWidth: 345 }}>
+              <Card sx={{ maxWidth: 360 }}>
                 <CardMedia
                   sx={{ height: 140 }}
-                  image='permanent_makeup.png'
+                  image='permanent.jpeg'
                   title='permanent makeup'
               />
                 <CardContent>
                   <Typography gutterBottom variant="h5" component="div">
-                    Annual Brow Touch Up/Color Boost
+                    Brow Touch Up/Color Boost***
                   </Typography>
-                  For Previously Shaded Brows
+                  {/* For Previously Shaded Brows */}
                   <Typography variant="body2" color="text.secondary">
                     $100+ | 180 minutes
                   </Typography>
