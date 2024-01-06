@@ -1,0 +1,42 @@
+body {
+    background-color: lightgrey;
+}
+
+/* .navContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+} */
+
+/* a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+} */
+
+.cardContainer{
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+
+/* button {
+    display: flex;
+} */
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+h4 {
+    display: flex;
+    justify-content: center;
+}
