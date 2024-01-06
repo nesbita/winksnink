@@ -9,7 +9,9 @@ import ImageListItemBar from '@mui/material/ImageListItemBar';
 import ListSubheader from '@mui/material/ListSubheader';
 import IconButton from '@mui/material/IconButton';
 import InfoIcon from '@mui/icons-material/Info';
-import './Portfolio.css'
+// import './Portfolio.css'
+import './Services.css'
+
 const itemData = [
     {
       img: 'https://images.unsplash.com/photo-1551963831-b3b1ca40c98e',
@@ -50,12 +52,12 @@ const itemData = [
       featured: true,
     },
     {
-      img: 'obt_1',
+      img: 'obt_1.png',
       title: 'Ombre Brow Tattoo I',
       author: '@winksnink',
     },
     {
-      img: 'obt_2',
+      img: 'obt_2.png',
       title: 'Ombre Brow Tattoo II',
       author: '@winksnink',
     },
@@ -107,13 +109,14 @@ class Portfolio extends Component {
       </Navbar>
     
    <h1>WINKS & INK</h1>
-    {/* <h2>Take a look at some of the work I've done!</h2> */}
+   <h3>Scroll through some of my work!</h3>
 {/* 
 function TitlebarImageList() { */}
 {/* //   return ( */}
-    <ImageList sx={{ width: 500, height: 450 }}>
+<div className='portfolioImageContainer'>
+    <ImageList sx={{ width: 1500, height: 700 }}>
       <ImageListItem key="Subheader" cols={2}>
-        <ListSubheader component="div">December</ListSubheader>
+        {/* <ListSubheader component="div">December</ListSubheader> */}
       </ImageListItem>
       {itemData.map((item) => (
         <ImageListItem key={item.img}>
@@ -131,7 +134,7 @@ function TitlebarImageList() { */}
                 sx={{ color: 'rgba(255, 255, 255, 0.54)' }}
                 aria-label={`info about ${item.title}`}
               >
-                <InfoIcon />
+                {/* <InfoIcon /> */}
               </IconButton>
             }
           />
@@ -142,7 +145,7 @@ function TitlebarImageList() { */}
 } */}
 
 
-
+</div>
 </>
         )
     }

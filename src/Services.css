@@ -46,7 +46,17 @@ h1 {
     justify-content: center;
 }
 
+h3{
+    display: flex;
+    justify-content: center;
+}
+
 h4 {
+    display: flex;
+    justify-content: center;
+}
+
+.portfolioImageContainer {
     display: flex;
     justify-content: center;
 }
